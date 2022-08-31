@@ -277,16 +277,12 @@
     height: 21px;
     left: 948px;
     top: 407px;
-
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
     line-height: 130%;
-    /* identical to box height, or 21px */
-
     letter-spacing: 0.025em;
-
     color: #000000;
 }
 
@@ -516,38 +512,44 @@
     padding: 15px;
 }
 
-.collections-image-left {}
 
 
 
 .footer {
-    width: 100%;
-    margin-top: 50px;
+    margin-top: 74px;
     position: relative;
+    color: #ffffff;
+    background-color: #00344c;
 }
 
 .footer-schedule {
+
     font-size: 12px;
     height: 60px;
     line-height: 14.4px;
     display: flex;
+    justify-content: center;
     color: #ffffff;
     background-color: #00344c;
-    padding: 8px 0 24px 0;
 }
 
 .footer-left {
-    width: 400px;
+    margin-right: 32px;
 }
 
-.footer-between {
+.footer-between {}
+
+
+.footer-right {
     display: flex;
 }
 
+.footer-right i {
+    margin-left: 53px;
+}
+
 .footer-right h3 {
-    line-height: 14.4px;
-    height: 40px;
-    margin-left: 50px;
+    margin-left: 16px;
 }
 
 
@@ -579,22 +581,29 @@
     height: 30px;
 }
 
+
 .footer-menu-list {
-    display: flex;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
     font-size: 14px;
     line-height: 21px;
-    font-weight: 400;
+    display: flex;
+    justify-content: center;
     list-style: none;
 }
 
 .footer-menu-list .footer-list-item a {
     color: #fff;
     margin: 0 25px;
+    text-decoration: none;
 }
 
 .footer-infor {
     text-align: center;
     margin-top: 61px;
+    font-family: 'Poppins';
+    font-style: normal;
     line-height: 16.34px;
     font-size: 13px;
     color: #fff;
