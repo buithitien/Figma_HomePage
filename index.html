@@ -12,7 +12,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,600;1,600&family=Montserrat:ital,wght@0,500;0,700;1,300;1,500&family=Poppins:ital,wght@0,400;0,600;0,700;1,700&family=Roboto:ital,wght@0,400;1,700&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <title>Mobile</title>
 </head>
 
@@ -38,6 +38,11 @@
                                 <i class="fa fa-chevron-down" aria-hidden="true"></i>
                             </div>
                         </ul>
+                        <div class="toggle">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -94,22 +99,26 @@
                         </div>
                     </div>
                     <div class="products-detail">
-                        <h3 class="products-name">XOR Titanium Collection</h3>
-                        <p class="products-price">đ 99,000,000</p>
-                        <div class="products-navigation">
-                            <div class="products-navigation-name">
-                                <span class="products-navigation-classic">Classic</span>
-                                <span class="products-navigation-ebony">Ebony</span>
-                                <span class="products-navigation-rose">Rose</span>
+                        <div>
+                            <h3 class="products-name">XOR Titanium Collection</h3>
+                            <p class="products-price">đ 99,000,000</p>
+                            <div class="products-navigation">
+                                <div class="products-navigation-name">
+                                    <span class="products-navigation-classic">Classic</span>
+                                    <span class="products-navigation-ebony">Ebony</span>
+                                    <span class="products-navigation-rose">Rose</span>
+                                </div>
                             </div>
                         </div>
                         <div class="products-count">
                             <div class="products-count-change">
-                                <label for="size">Quantity</label>
+                                <label class="quantity" for="size">Quantity</label>
                                 <div class="count-change">
-                                    <span class="minus">-</span>
-                                    <span class="num">01</span>
-                                    <span class="plus">+</span>
+                                    <input onclick="minus('0')" type="button" value="-" min="" id="btn-minus"
+                                        name="btn-minus" class="btn-minus">
+                                    <input type="text" value="01" name="num" id="num" class="num" min="01">
+                                    <input onclick="plus('100')" type="button" value="+" id="btn-plus" name="btn-plus"
+                                        class="btn-plus">
                                 </div>
                             </div>
                             <div class="cart">
@@ -120,18 +129,31 @@
                         <div class="products-title">
                             <div class="products-title-classic">
                                 <p><span>Titanium Classic</span>, understated and chic, is the perfect companion for any
-                                    occasion.</p>
+                                    occasion.
+                                </p>
                             </div>
                             <div class="products-title-ebony">
                                 <p><span>Titanium Ebony</span> in black PVD, elevates the sense of mystery to the next
-                                    level.</p>
+                                    level.
+                                </p>
                             </div>
                             <div class="products-title-rose">
                                 <p><span>Titanium Rose</span> with soft colours is the perfect phone for the confident
-                                    sophisticat.</p>
+                                    sophisticat.
+                                </p>
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="logo">
+            <div class="logo-icon">
+                <div class="logo-messenger">
+                    <i class="fa-brands fa-facebook-messenger"></i>
+                </div>
+                <div class="logo-call">
+                    <i class="fa-solid fa-phone"></i>
                 </div>
             </div>
         </div>
@@ -139,82 +161,85 @@
             <div class="container">
                 <div class="description-card">
                     <div class="card">
-                        <span class="informations">Product Informations</span>
-                        <span class="policy">Return & Warranty Policy</span>
+                        <button class="informations">Product Informations</button>
+                        <button class="policy">Return & Warranty Policy</button>
                     </div>
-                    <div>
-                        <div>
-                            <div>
-                                <h2> 1. Return policyyy</h2>
-                                <p><b>Return Policy</b> <br>
-                                    Customers have the right to refund the device within 28 days from the date of
-                                    purchase if it is due to a manufacturer's fault.br <br>
-                                    The refund is FREE <br>
-                                    Refund conditions: <br>
-                                <ul>
-                                    <li> The device works normally: not locked, showing IMEI.</li>
-                                    <li>The device is intact, not scratched, burned, soaked in water or chemicals, not
-                                        dropped.
-                                    </li>
-                                    <li> With original box, accessories, and warranty card included.</li>
-                                </ul>
-                            </div>
-                            <h2><b>1. Warranty policy</b> </h2><br>
-                            <b>Warranty coverage</b> <br>
-                            All XOR phone products are officially distributed in the Vietnam market via Gluxury. <br>
-                            Warranty period: 1 year from the date of purchase based on the Warranty Card. <br>
-                            <b> The warranty period for repaired / replaced products</b>
-                            <br>
-                            The warranty period for replacement spare parts is calculated as follows:
-                            <ul>
-                                <li> If the product has a warranty period of more than 6 months, the warranty period of
-                                    the
-                                    replacement spare part will be equal to the remaining warranty period of the
-                                    product.
-                                </li>
-                                <li> If the product has less than 6 months of the warranty period or was out of
-                                    warranty, the
-                                    warranty period of replacement parts will be 6 months.
-                                </li>
-                            </ul>
-                            <b>Warranty period with renewed products</b> <br>
-                            The warranty period of the renewed products is calculated as follows:
-                            <ul>
-                                <li> If the product has a warranty period of more than 6 months, the warranty period of
-                                    the
-                                    new equipment will be equal to the remaining warranty period of the product.
-                                </li>
-                                <li> If the product has a warranty period of fewer than 6 months or is out of warranty,
-                                    the
-                                    warranty period of renewed equipment will be 6 months.
-                                </li>
-                            </ul>
-                            <b>Warranty product</b> <br>
-                            The XOR phone products must be distributed genuinely in Vietnam. <br>
-                            The products have some technical defects that need to be repaired within the warranty
-                            period. <br>
-                            The products will NOT be covered by warranty if they fall under the following warranty
-                            disclaimers: <br>
-                            <ul>
-                                <li> Product warranty expires. </li>
-                                <li> Cannot read IMEI on screen. </li>
-                                <li> There is no warranty card or the information on the warranty card does not match
-                                    with
-                                    the device information.
-                                </li>
-                                <li> The product is damaged due to normal wear and tear, improper use. </li>
-                                <li> The product is tampered with by a third party </li>
-                                <li> Failure or damage due to accident, carelessness, dropping, fire or explosion,
-                                    exposure
-                                    to water or chemicals, used in high temperature or humid places, natural disasters.
-                                </li>
-                                <li>The device is in a locked state, locked sim. </li>
-                                <li> Errors or failures due to a functional error of the mobile network operators or a
-                                    third
-                                    party that is not under the control of XOR Inc.</li>
-                            </ul>
-                        </div>
+                    <div class="cross-bar"></div>
+                </div>
+                <div class="description-content">
+                    <div class="content-title">
+                        <h2> 1. Return policy</h2>
+                        <p><b>Return Policy</b> <br>
+                            Customers have the right to refund the device within 28 days from the date of
+                            purchase if it is due to a manufacturer's fault.
+                        <p class="content-title-text">The refund is FREE </p>
+                        <p>Refund conditions:</p>
+                        <ul>
+                            <li> The device works normally: not locked, showing IMEI.</li>
+                            <li>The device is intact, not scratched, burned, soaked in water or chemicals, not
+                                dropped.
+                            </li>
+                            <li> With original box, accessories, and warranty card included.</li>
+                        </ul>
                     </div>
+                    <h2 class="content-title"><b>1. Warranty policy</b> </h2>
+                    <b>Warranty coverage</b> <br>
+                    <ul>
+                        <li>All XOR phone products are officially distributed in the Vietnam market via Gluxury.
+                        </li>
+                        <li>Warranty period: 1 year from the date of purchase based on the Warranty Card.</li>
+                    </ul>
+                    <p class="content-title"> <b> The warranty period for repaired / replaced products</b></p>
+                    The warranty period for replacement spare parts is calculated as follows:
+                    <ul>
+                        <li> If the product has a warranty period of more than 6 months, the warranty period of
+                            the
+                            replacement spare part will be equal to the remaining warranty period of the
+                            product.
+                        </li>
+                        <li> If the product has less than 6 months of the warranty period or was out of
+                            warranty, the
+                            warranty period of replacement parts will be 6 months.
+                        </li>
+                    </ul>
+                    <p class="content-title"><b>Warranty period with renewed products</b></p>
+                    The warranty period of the renewed products is calculated as follows:
+                    <ul>
+                        <li> If the product has a warranty period of more than 6 months, the warranty period of
+                            the
+                            new equipment will be equal to the remaining warranty period of the product.
+                        </li>
+                        <li> If the product has a warranty period of fewer than 6 months or is out of warranty,
+                            the
+                            warranty period of renewed equipment will be 6 months.
+                        </li>
+                    </ul>
+                    <p class="content-title"><b>Warranty product</b></p>
+                    The XOR phone products must be distributed genuinely in Vietnam. <br>
+                    The products have some technical defects that need to be repaired within the warranty
+                    period. <br>
+                    The products will NOT be covered by warranty if they fall under the following warranty
+                    disclaimers: <br>
+                    <ul>
+                        <li> Product warranty expires. </li>
+                        <li> Cannot read IMEI on screen. </li>
+                        <li> There is no warranty card or the information on the warranty card does not match
+                            with
+                            the device information.
+                        </li>
+                        <li> The product is damaged due to normal wear and tear, improper use. </li>
+                        <li> The product is tampered with by a third party </li>
+                        <li> Failure or damage due to accident, carelessness, dropping, fire or explosion,
+                            exposure
+                            to water or chemicals, used in high temperature or humid places, natural disasters.
+                        </li>
+                        <li>The device is in a locked state, locked sim. </li>
+                        <li> Errors or failures due to a functional error of the mobile network operators or a
+                            third
+                            party that is not under the control of XOR Inc.
+                        </li>
+                    </ul>
+
                 </div>
             </div>
         </div>
@@ -229,11 +254,11 @@
                 <h4 class="product-name">Luxury Belt Pouch XOR Case</h4>
                 <p class="product-price">$250</p>
                 <label class="product-cart">Add to cart</label>
-               
+
             </div>
             <div class="accessories-image-right">
-            <img src="./asset/image/group 559.png" alt="">
-            <h4 class="product-name">LuxuryUniversal Wireless Charger</h4>
+                <img src="./asset/image/group 559.png" alt="">
+                <h4 class="product-name">LuxuryUniversal Wireless Charger</h4>
                 <p class="product-price">$165</p>
                 <label class="product-cart">Add to cart</label>
 
@@ -246,10 +271,20 @@
         </div>
         <div class="collections-image">
             <div class="collections-image-left">
-                <img src="./asset/image/rectangle 649.png" alt="">
+                <div class="cart-image">
+                    <img src="./asset/image/rectangle 649.png" alt="">
+                </div>
+                <div class="cart-title">
+                    <h5>XOR <span>Bespoke</span></h5>
+                </div>
             </div>
             <div class="collections-image-right">
-                <img src="./asset/image/rectangle 40.png" alt="">
+                <div class="cart-image">
+                    <img src="./asset/image/rectangle 40.png" alt="">
+                </div>
+                <div class="cart-title">
+                    <h5>XOR <span>Odin</span></h5>
+                </div>
             </div>
         </div>
     </div>
@@ -297,6 +332,7 @@
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="./asset/js/swiper.js"></script>
     <script src="./asset/js/index.js"></script>
 </body>
 
