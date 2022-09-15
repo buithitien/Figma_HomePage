@@ -1,6 +1,15 @@
+const toggle = document.querySelector(".toggle");
+const menulist = document.querySelector(".menu-list");
+
+toggle.addEventListener("click",()=>{
+    toggle.classList.toggle("active");
+    menulist.classList.toggle("active");
+})
+
+
 var swiper = new Swiper(".mySwiper", {
     loop: true,
-    spaceBetween: 30,
+    spaceBetween: 15,
     slidesPerView: 6,
     freeMode: true,
     watchSlidesProgress: true,
